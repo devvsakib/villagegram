@@ -1,8 +1,13 @@
+/* Import */
+@import url('./styles/tailwind.common.css');
+
+/* Tailwind CSS directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom CSS and additional styles go here */
 body {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
