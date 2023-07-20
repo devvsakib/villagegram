@@ -3,7 +3,7 @@ import MoreOptions from "./MoreOptions"
 
 const Sidebar = () => {
   return (
-    <div className="border-r w-[260px] flex flex-col justify-between p-3">
+    <div className="border-r border-white/20 w-[240px] flex flex-col justify-between p-3">
       <div className="grid gap-5">
         <div className="px-2 mt-2">
           <img src="assets/Villagegram.svg" alt="" srcset="" />
