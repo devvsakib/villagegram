@@ -16,3 +16,13 @@ body {
 .feedSize {
   width: calc(100% - 240px) !important;
 }
+
+.storyBG {
+  background: linear-gradient(45deg,
+      #FDC400 0%,
+      #E90E55 50%,
+      #CE00C0 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
