@@ -1,5 +1,6 @@
 import React from 'react'
 import StoryArea from './StoryArea'
+import Articles from './Articles'
 
 const Feed = () => {
 
@@ -11,8 +12,9 @@ const Feed = () => {
                 <StoryArea />
             </div>
             {/* Feed Area */}
-            <div>
-                Feed
+            <div className=''>
+                <Articles />
+                <Articles />
                 {/* article measurement */}
                 {/* 
                     max-width: 470px; - sm 
