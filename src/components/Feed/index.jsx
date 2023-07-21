@@ -36,7 +36,7 @@ const Feed = () => {
         }
     ]
     return (
-        <div className='flex-1 mr-10'>
+        <div className='flex-1 mr-10 pl-5'>
             <div></div>
             {/* Story Area */}
             <div>
@@ -46,9 +46,9 @@ const Feed = () => {
                             users.map(user => (
                                 <li key={user.id} className="mb-3">
                                     <button className="flex flex-col justify-center items-center gap-3">
-                                        <div className={`w-14 flex justify-center rounded-full box-content p-[2px] ${!user?.storyChecked ? "storyBG" : "border-[1px] border-white/30"}`}>
+                                        <div className={`w-16 flex justify-center rounded-full box-content p-[2px] ${!user?.storyChecked ? "storyBG" : ""}`}>
                                             <span className=' rounded-full overflow-hidden bg-white block'>
-                                                <img className="" src={user.img} alt={user.name} />
+                                                <img className=" rounded-full p-[2px] bg-black" src={user.img} alt={user.name} />
                                             </span>
                                         </div>
                                         <div className="text-sm -mt-2">

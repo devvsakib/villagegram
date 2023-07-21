@@ -19,7 +19,7 @@ body {
 
 .storyBG {
   background: linear-gradient(45deg,
-      #FDC400 0%,
+      #FDC400 20%,
       #E90E55 50%,
       #CE00C0 100%);
   background-size: cover;
