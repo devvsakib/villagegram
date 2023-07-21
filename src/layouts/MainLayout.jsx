@@ -9,7 +9,7 @@ const MainLayout = () => {
                 <Sidebar />
             </div>
             {/* will contain major component for main layout */}
-            <div className='pr-20 pt-12 feedSize ml-auto'>
+            <div className='pr-10 pt-12 feedSize ml-auto'>
                 <Outlet />
             </div>
         </div>
