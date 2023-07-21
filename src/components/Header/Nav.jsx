@@ -18,7 +18,7 @@ const Nav = () => {
         { icon: <AiOutlinePlusCircle />, activeIcon: <AiOutlinePlusCircle />, title: 'Create' }
     ]
     return (
-        <nav className='flex flex-col gap-4 justify-start text-sm'>
+        <nav className='flex flex-col gap-4 justify-start text-base'>
 
             {
                 menuItems.map((item, index) => (
