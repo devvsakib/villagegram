@@ -9,6 +9,7 @@ export default {
       colors: {
         "primary": "#f5f5f5",
         "secondary": "#a8a8a8",
+        "tertiary": "#737373",
       },
       fontSize: {
         "xs": ".75rem",
