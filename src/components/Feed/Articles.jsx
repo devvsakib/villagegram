@@ -7,7 +7,7 @@ const Articles = () => {
             {/* header */}
             <div className="flex items-center justify-between text-sm  py-3">
                 <div className="flex items-center gap-1">
-                    <img className="w-8 h-8 rounded-full mr-3" src="assets/devvsakib.jpg" alt="profile" />
+                    <img className="w-8 h-8 object-cover rounded-full mr-3" src="https://github.com/devvsakib.png" alt="profile" />
                     <div className="flex flex-col">
                         <p className="font-semibold">devvsakib</p>
                         {/* location render conditionaly */}
@@ -31,7 +31,7 @@ const Articles = () => {
             </div>
             {/* image/video */}
             <div className="w-full h-[585px] rounded-md mb-3 overflow-hidden">
-                <img className="object-cover w-full" src="assets/lemon.jpg" alt="post" />
+                <img className="object-cover object-center w-full" src="assets/lemon.jpg" alt="post" />
             </div>
 
             {/* action buttons */}
