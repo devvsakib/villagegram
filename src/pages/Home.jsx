@@ -1,4 +1,3 @@
-import LoadingScreen from "../components/Common/LoadingScreen"
 import Feed from "../components/Feed"
 import RightSidebar from "../components/Sidebar/RightSidebar"
 
