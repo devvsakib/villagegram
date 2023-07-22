@@ -1,12 +1,13 @@
 import MyStories from "../components/Profile/MyStories"
 import ProfileHeader from "../components/Profile/ProfileHeader"
+import ProfileLayout from "../layouts/ProfileLayout"
 
 const Profile = () => {
     return (
-        <main>
+        <ProfileLayout>
             <ProfileHeader />
             <MyStories />
-        </main>
+        </ProfileLayout>
     )
 }
 
