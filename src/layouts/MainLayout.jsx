@@ -6,16 +6,16 @@ import LoadingScreen from '../components/common/LoadingScreen'
 const MainLayout = () => {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        // document.body.style.overflow = 'hidden'
-        // setTimeout(() => {
-        //     setLoading(false)
-        //     document.body.style.overflow = 'auto'
-        // }, 2300)
+        document.body.style.overflow = 'hidden'
+        setTimeout(() => {
+            setLoading(false)
+            document.body.style.overflow = 'auto'
+        }, 2300)
     }, [])
     return (
         <div id='mainLayout' className='flex'>
             {
-                !loading && <div className='fixed top-0 left-0 w-screen h-screen bg-black z-50 flex justify-center items-center'>
+                loading && <div className='fixed top-0 left-0 w-screen h-screen bg-black z-50 flex justify-center items-center'>
                     <LoadingScreen />
                 </div>
             }
