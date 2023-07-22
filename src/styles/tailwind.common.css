@@ -1,3 +1,3 @@
 .sidebarIcon {
-    @apply w-6 h-6 flex items-center text-xl group-hover:text-[23px]
+    @apply w-6 h-6 flex items-center text-2xl group-hover:text-[23px]
 }

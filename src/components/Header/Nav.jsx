@@ -23,14 +23,14 @@ const Nav = () => {
             {
                 menuItems.map((item, index) => (
                     item.link ?
-                        <Link className='flex gap-2  items-center rounded-lg px-2 py-2 font-medium hover:bg-slate-100/10 group' path={item.link} key={index}>
+                        <Link className='flex gap-3 items-center text-left rounded-lg px-2 py-2 font-medium hover:bg-slate-100/10 group' path={item.link} key={index}>
                             <span className='sidebarIcon'>
                                 {item.icon}
                             </span>
                             {item.title}
                         </Link>
                         :
-                        <button className='flex gap-2  items-center text-left rounded-lg px-2 py-2 font-medium hover:bg-slate-100/10 group' key={index}>
+                        <button className='flex gap-3 items-center text-left rounded-lg px-2 py-2 font-medium hover:bg-slate-100/10 group' key={index}>
                             <span className='sidebarIcon'>
                                 {item?.icon}
                             </span>
@@ -38,9 +38,9 @@ const Nav = () => {
 
                 ))
             }
-            <Link className='flex gap-2  items-center text-left rounded-lg px-2 py-2 font-medium hover:bg-slate-100/10 group group'>
+            <Link className='flex gap-3  items-center text-left rounded-lg px-2 py-2 font-medium hover:bg-slate-100/10 group group'>
                 <span className='sidebarIco'>
-                    <img class="h-5 w-5 ml-1 rounded-full " src="https://github.com/devvsakib.png" alt="devvsakib" />
+                    <img class="h-5 w-5 ml-1 rounded-full ring-2 ring-white" src="https://github.com/devvsakib.png" alt="devvsakib" />
                 </span>
                 Profile
 
