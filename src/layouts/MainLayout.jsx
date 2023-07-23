@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../components/Sidebar/Sidebar'
-import LoadingScreen from '../components/common/LoadingScreen'
+import LoadingScreen from '../components/Common/LoadingScreen'
 
 const MainLayout = () => {
     const [loading, setLoading] = useState(true)
