@@ -2,7 +2,7 @@ import { MdSettings } from "react-icons/md"
 
 const ProfileHeader = () => {
   return (
-    <header className="flex gap-24">
+    <header className="flex gap-24 mb-16">
       <div className="">
         <div className="mr-3xl">
           <div className="w-36 h-36 rounded-full overflow-hidden">
