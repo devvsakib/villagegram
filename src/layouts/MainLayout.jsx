@@ -2,8 +2,11 @@ import { useEffect, useState } from "react"
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../components/Sidebar/Sidebar'
 import LoadingScreen from '../components/Common/LoadingScreen'
+import useWindowSize from "../hooks/useWindowSize"
+import Maintaince from "../components/Maintaince"
 
 const MainLayout = () => {
+    const windowSize = useWindowSize()
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         document.body.style.overflow = 'hidden'
@@ -19,13 +22,20 @@ const MainLayout = () => {
                     <LoadingScreen />
                 </div>
             }
-            <div>
-                <Sidebar />
-            </div>
-            {/* will contain major component for main layout */}
-            <div className='pr-10 pt-12 feedSize ml-auto'>
-                <Outlet />
-            </div>
+            {
+                windowSize.width < 1200 ?
+                    <Maintaince />
+                    :
+                    <>
+                        <div>
+                            <Sidebar />
+                        </div>
+                        {/* will contain major component for main layout */}
+                        <div className='pr-10 pt-12 feedSize ml-auto'>
+                            <Outlet />
+                        </div>
+                    </>
+            }
         </div>
     )
 }
