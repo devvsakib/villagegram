@@ -16,6 +16,9 @@ body {
 .feedSize {
   width: calc(100% - 240px) !important;
 }
+.profileSize {
+  width: calc(100% - 200px) !important;
+}
 
 .storyBG {
   background: linear-gradient(45deg,

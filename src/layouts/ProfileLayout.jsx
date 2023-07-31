@@ -1,6 +1,6 @@
 const ProfileLayout = ({ children }) => {
     return (
-        <main className="feedSize mx-auto">
+        <main className="profileSize mx-auto">
             {children}
         </main>
     )
