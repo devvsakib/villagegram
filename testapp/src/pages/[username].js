@@ -9,6 +9,7 @@ import TaggedPost from "../components/MyProfile/TaggedPost"
 import SavedPost from "../components/MyProfile/SavedPost"
 import Head from "next/head"
 import MainLayout from "@/layouts/MainLayout"
+import { useRouter } from "next/router"
 
 const Profile = () => {
     const [tabIndex, setTabIndex] = useState(0);
