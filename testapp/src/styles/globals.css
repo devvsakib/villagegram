@@ -1,0 +1,31 @@
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS and additional styles go here */
+body {
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.feedSize {
+  width: calc(100% - 240px) !important;
+}
+.profileSize {
+  width: calc(100% - 200px) !important;
+}
+
+.storyBG {
+  background: linear-gradient(45deg,
+      #FDC400 20%,
+      #E90E55 50%,
+      #CE00C0 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sidebarIcon {
+  @apply w-6 h-6 flex items-center text-2xl group-hover:text-[23px]
+}

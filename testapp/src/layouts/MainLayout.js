@@ -1,11 +1,11 @@
+import LoadingScreen from "@/components/Common/LoadingScreen"
+import Maintaince from "@/components/Maintaince"
+import Sidebar from "@/components/Sidebar/Sidebar"
+import useWindowSize from "@/hooks/useWindowSize"
 import { useEffect, useState } from "react"
-import { Outlet } from 'react-router-dom'
-import Sidebar from '../components/Sidebar/Sidebar'
-import LoadingScreen from '../components/Common/LoadingScreen'
-import useWindowSize from "../hooks/useWindowSize"
-import Maintaince from "../components/Maintaince"
 
-const MainLayout = () => {
+
+const MainLayout = ({children}) => {
     const windowSize = useWindowSize()
     const [loading, setLoading] = useState(true)
     // useEffect(() => {
@@ -32,7 +32,7 @@ const MainLayout = () => {
                         </div>
                         {/* will contain major component for main layout */}
                         <div className='pr-10 pt-12 feedSize ml-auto'>
-                            <Outlet />
+                          {children}
                         </div>
                     </>
             }
